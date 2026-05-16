@@ -21,3 +21,8 @@ public class Calculator {
         return (double) a / b;
     }
 }
+    // Feature: modulo operation
+    public int modulo(int a, int b) {
+        if (b == 0) throw new ArithmeticException("Modulo by zero");
+        return a % b;
+    }
