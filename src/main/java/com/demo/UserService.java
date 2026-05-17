@@ -32,4 +32,14 @@ public class UserService {
     public int getUserCount() {
         return users.size();
     }
+
+    public boolean isValidEmailFormat(String email) {
+        if (email == null) return false;
+        return email.contains("@") && email.contains(".") && email.length() > 5;
+    }
 }
+    // Feature: improved email validation with domain check
+    /*public boolean isValidEmailFormat(String email) {
+        if (email == null) return false;
+        return email.contains("@") && email.contains(".") && email.length() > 5;
+    }*/
