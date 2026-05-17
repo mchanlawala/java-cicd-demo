@@ -34,7 +34,7 @@ public class UserService {
     }
 }
     // Feature: improved email validation with domain check
-    public boolean isValidEmailFormat(String email) {
+    /*public boolean isValidEmailFormat(String email) {
         if (email == null) return false;
         return email.contains("@") && email.contains(".") && email.length() > 5;
-    }
+    }*/
